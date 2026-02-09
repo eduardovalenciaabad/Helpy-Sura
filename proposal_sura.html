@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Alianza Estratégica | Helpy + SURA</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        helpy: {
+                            light: '#4CC9F0',
+                            DEFAULT: '#4361EE',
+                            dark: '#3A0CA3',
+                            teal: '#2DD4BF',
+                        },
+                        sura: {
+                            blue: '#003DA5',
+                            red: '#E30613',
+                            gray: '#53565A',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.08)',
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 30px rgba(227, 6, 19, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA;
+            color: #1F2937;
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #003DA5, #4361EE);
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(#003DA5 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.02;
+        }
+
+        .data-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #E30613, #003DA5);
+        }
+    </style>
+</head>
+
+<body class="antialiased scroll-smooth">
+
+    <!-- SECTION 1: HERO - EL GANCHO (Re-framing) -->
+    <section
+        class="relative min-h-screen flex flex-col justify-center items-center px-6 py-20 text-center overflow-hidden bg-white">
+        <div class="absolute inset-0 hero-pattern pointer-events-none"></div>
+
+        <!-- Logos -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-16 animate-fade-in-up">
+            <div
+                class="h-28 md:h-32 flex items-center justify-center transition-transform hover:scale-105 duration-300">
+                <img src="./logo_helpy.png" alt="Logo Helpy" class="max-h-full w-auto object-contain drop-shadow-md">
+            </div>
+
+            <div class="text-4xl text-gray-200 font-light hidden md:block">×</div>
+            <div class="w-full h-px bg-gray-200 md:hidden"></div>
+
+            <div
+                class="h-28 md:h-32 flex items-center justify-center transition-transform hover:scale-105 duration-300">
+                <img src="./logos start y ongoing/logo sura.png" alt="Logo SURA"
+                    class="max-h-full w-auto object-contain drop-shadow-md">
+            </div>
+        </div>
+
+        <!-- Copy -->
+        <div class="max-w-5xl mx-auto space-y-8 relative z-10">
+            <div
+                class="inline-block px-5 py-2 bg-red-50 text-sura-red font-bold rounded-full border border-red-100 tracking-wide uppercase text-xs mb-4">
+                Propuesta de Alianza Estratégica
+            </div>
+
+            <h1 class="font-heading text-5xl md:text-7xl font-black leading-tight text-gray-900">
+                Inteligencia Preventiva: <br>
+                <span class="gradient-text">El Nuevo Estándar en Salud Pediátrica</span>
+            </h1>
+
+            <p class="text-2xl md:text-3xl text-sura-gray font-medium leading-relaxed max-w-4xl mx-auto">
+                Cuando la <strong>gestión de tendencias</strong> se encuentra con la <strong>prevención
+                    operativa</strong>,
+                nacen soluciones que transforman riesgos en oportunidades de crecimiento sostenible.
+            </p>
+
+            <div class="pt-6 flex flex-col md:flex-row items-center justify-center gap-4 text-sm font-semibold">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Reducción de Siniestralidad</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Contención de Costos</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Fidelización de Asegurados</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Blobs -->
+        <div class="absolute -z-10 w-full h-full top-0 left-0 overflow-hidden pointer-events-none">
+            <div
+                class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40">
+            </div>
+            <div
+                class="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-red-50 rounded-full mix-blend-multiply filter blur-3xl opacity-40">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DIAGNÓSTICO DEL DOLOR (Finger in the wound) -->
+    <section class="py-24 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sura-red font-bold tracking-wider text-sm uppercase block mb-3">El Problema
+                    Real</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6">Las Tres Fugas de Capital de
+                    SURA</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    SURA es líder en <strong>gestión de tendencias</strong>, pero hay una realidad que amenaza la
+                    sostenibilidad: el modelo reactivo está colapsando bajo el peso de nuevos riesgos no gestionados.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fuga 1 -->
+                <div class="data-card bg-white p-8 rounded-2xl shadow-card hover:shadow-xl transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-red-100 text-sura-red rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Fuga #1</h3>
+                    </div>
+                    <h4 class="text-lg font-bold text-sura-red mb-3">Explosión de Salud Mental</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Ansiedad, depresión y trastornos en población pediátrica están saturando consultas y elevando
+                        el costo por tratamiento.
+                    </p>
+                    <div class="bg-red-50 p-4 rounded-lg border-l-4 border-sura-red">
+                        <p class="text-sm font-semibold text-gray-800">
+                            El sistema recibe al paciente cuando ya está "roto". El costo de curar es 10x el costo de
+                            prevenir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fuga 2 -->
+                <div class="data-card bg-white p-8 rounded-2xl shadow-card hover:shadow-xl transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Fuga #2</h3>
+                    </div>
+                    <h4 class="text-lg font-bold text-orange-600 mb-3">Saturación de Urgencias</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Padres acuden a urgencias con consultas que no requieren atención especializada, pero carecen
+                        de orientación preventiva.
+                    </p>
+                    <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-600">
+                        <p class="text-sm font-semibold text-gray-800">
+                            Sin un filtro de contención eficaz, cada urgencia innecesaria es capital desperdiciado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fuga 3 -->
+                <div class="data-card bg-white p-8 rounded-2xl shadow-card hover:shadow-xl transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-blue-100 text-sura-blue rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Fuga #3</h3>
+                    </div>
+                    <h4 class="text-lg font-bold text-sura-blue mb-3">Desconexión Estratégica</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        SURA opera en hospitales y clínicas. Helpy opera en colegios y hogares. Ustedes curan. Nosotros
+                        educamos <strong>antes de que detone el riesgo</strong>.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-sura-blue">
+                        <p class="text-sm font-semibold text-gray-800">
+                            La oportunidad: Conectar ecosistemas para anticipar el riesgo, no reaccionar a él.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Callout -->
+            <div class="mt-12 bg-white rounded-3xl p-10 shadow-soft border-2 border-red-100">
+                <div class="text-center">
+                    <p class="text-sura-red font-bold text-lg mb-2 uppercase tracking-wide">Proyección a 5 años</p>
+                    <h3 class="font-heading text-4xl font-black text-gray-900 mb-4">
+                        El costo de <span class="text-sura-red">NO ACTUAR HOY</span> es exponencial
+                    </h3>
+                    <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                        Sin prevención efectiva, el incremento en siniestralidad por salud mental y enfermedades
+                        crónicas prevenibles amenaza los márgenes operativos de todo el sector asegurador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LA SOLUCIÓN OPERATIVA (Helpy como Socio) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-helpy font-bold tracking-wider text-sm uppercase block mb-3">La Solución</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Helpy + SURA: Dos Ecosistemas que se Potencian
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    SURA lidera la <strong>gestión de tendencias y riesgos</strong> en el sistema de salud.
+                    Helpy opera como <strong>plataforma de prevención e inteligencia territorial</strong> en colegios,
+                    hogares y comunidades.
+                    Juntos, creamos un ecosistema completo que conecta <strong>atención + prevención + datos en tiempo
+                        real</strong>.
+                </p>
+            </div>
+
+            <!-- SURA + Helpy Synergy Box -->
+            <div class="bg-gradient-to-r from-blue-50 to-red-50 rounded-3xl p-10 mb-16 border-2 border-blue-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="./logos start y ongoing/logo sura.png" alt="SURA" class="h-12 object-contain">
+                        </div>
+                        <h3 class="text-xl font-bold text-sura-blue mb-3">Lo que SURA domina</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-sura-blue shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Infraestructura de salud: <strong>207 sedes</strong>, 15,000 profesionales</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-sura-blue shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Gestión de riesgos y tendencias (Observatorio de Tendencias)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-sura-blue shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Modelo vertical integrado: Seguros + IPS + EPS</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-sura-blue shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Presencia en <strong>9 países</strong> de América Latina</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="./logo_helpy.png" alt="Helpy" class="h-12 object-contain">
+                        </div>
+                        <h3 class="text-xl font-bold text-helpy mb-3">Lo que Helpy aporta</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-helpy shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Capilaridad territorial: Colegios, hogares, comunidades (donde SURA no tiene sedes
+                                    físicas)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-helpy shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Inteligencia preventiva: IA que detecta riesgos tempranos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-helpy shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Educación escalable: <strong>+500 microcápsulas</strong> validadas
+                                    científicamente</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-helpy shrink-0 mt-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Accesibilidad radical: <strong>$1,000 COP/usuario</strong> (modelo
+                                    sostenible)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-white rounded-2xl p-8 text-center border-2 border-green-200">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-3">
+                        🤝 La Ecuación Ganadora: SURA Cura + Helpy Previene = Ecosistema Completo
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        SURA opera cuando el problema ya está presente (modelo reactivo de alta calidad).
+                        Helpy educa <strong>antes</strong> de que el riesgo detone (modelo preventivo escalable).
+                        Juntos, creamos el único ecosistema que cubre <strong>todo el ciclo de vida del riesgo</strong>:
+                        Prevención → Detección Temprana → Triaje → Atención Especializada.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3 Pilares de Retorno -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+                <!-- Pilar 1 -->
+                <div
+                    class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-3xl border-2 border-green-200 hover:border-green-400 transition-all">
+                    <div
+                        class="w-14 h-14 bg-green-600 text-white rounded-2xl flex items-center justify-center mb-6 font-bold text-2xl">
+                        1
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Reducción de Costos Operativos Inmediatos</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Triaje Inteligente:</strong> Filtramos y educamos para que solo lleguen a urgencias los
+                        casos que realmente lo requieren.
+                    </p>
+                    <div class="bg-white p-4 rounded-xl">
+                        <p class="text-sm font-semibold text-green-800">
+                            Efecto inmediato: Menos consultas innecesarias = ahorro directo en costos de atención.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl border-2 border-blue-200 hover:border-blue-400 transition-all">
+                    <div
+                        class="w-14 h-14 bg-sura-blue text-white rounded-2xl flex items-center justify-center mb-6 font-bold text-2xl">
+                        2
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Reducción de Siniestralidad Futura</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Prevención Mental Real:</strong> Detectamos ansiedad, depresión y bullying en colegios
+                        ANTES de que se conviertan en patologías costosas.
+                    </p>
+                    <div class="bg-white p-4 rounded-xl">
+                        <p class="text-sm font-semibold text-blue-800">
+                            Efecto a mediano plazo: Menos tratamientos de alto costo por enfermedades prevenibles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div
+                    class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-3xl border-2 border-purple-200 hover:border-purple-400 transition-all">
+                    <div
+                        class="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6 font-bold text-2xl">
+                        3
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Fidelización y Valor Percibido</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Diferenciador Competitivo:</strong> Las familias aseguradas reciben acceso exclusivo a
+                        prevención de primer nivel.
+                    </p>
+                    <div class="bg-white p-4 rounded-xl">
+                        <p class="text-sm font-semibold text-purple-800">
+                            Efecto en retención: Menor Churn Rate y mayor percepción de valor de la póliza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <div class="bg-gradient-to-r from-sura-blue to-helpy text-white rounded-3xl p-12 shadow-glow">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="font-heading text-3xl md:text-4xl font-bold mb-6">
+                        El Modelo de Helpy transforma la prevención en un activo financiero
+                    </h3>
+                    <p class="text-xl text-blue-100 mb-8">
+                        No somos un costo. Somos una inversión que genera retorno medible en tres dimensiones:
+                        <strong>operativa, financiera y estratégica</strong>.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="text-4xl font-black mb-2">3:1</div>
+                            <p class="text-sm text-blue-100">ROI Proyectado: Por cada $1 invertido, $3 de ahorro en
+                                tratamientos curativos</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="text-4xl font-black mb-2">-25%</div>
+                            <p class="text-sm text-blue-100">Reducción estimada en consultas de urgencias
+                                innecesarias</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                            <div class="text-4xl font-black mb-2">+40%</div>
+                            <p class="text-sm text-blue-100">Incremento en satisfacción de familias aseguradas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3.5: QUIÉNES SOMOS - HELPY EN PROFUNDIDAD -->
+    <section class="py-24 px-6 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <span class="text-helpy font-bold tracking-wider text-sm uppercase block mb-3">Sobre Helpy</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Más que una Plataforma: Un Ecosistema de Prevención Integral
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conoce a fondo quiénes somos, qué hacemos y por qué Helpy está transformando la salud preventiva
+                    pediátrica en Colombia.
+                </p>
+            </div>
+
+            <!-- Las 4 Especialidades -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-gray-900 mb-10 text-center">🎯 Nuestras 4 Especialidades Médicas</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Especialidad 1 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-card border-2 border-transparent hover:border-blue-300 transition-all">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-20 h-20 flex items-center justify-center">
+                                <img src="./Logos Helpy/Icono endocrino.png" alt="Endocrinología"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Endocrinología Pediátrica</h4>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Cambios hormonales, crecimiento, pubertad, desarrollo físico y metabólico. Desmitificamos el
+                            cuerpo en crecimiento con rigor científico y lenguaje claro.
+                        </p>
+                    </div>
+
+                    <!-- Especialidad 2 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-card border-2 border-transparent hover:border-green-300 transition-all">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-20 h-20 flex items-center justify-center">
+                                <img src="./Logos Helpy/Icono Nutricion.png" alt="Nutrición"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Nutrición y Buenos Hábitos</h4>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Alimentación según la etapa de desarrollo, relación con la comida, hábitos diarios, sueño,
+                            ejercicio y <strong>prevención de trastornos alimentarios</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Especialidad 3 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-card border-2 border-transparent hover:border-purple-300 transition-all">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-20 h-20 flex items-center justify-center">
+                                <img src="./Logos Helpy/Icono salud mental.png" alt="Salud Mental"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Salud Mental</h4>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Ansiedad, depresión, manejo emocional, autoestima, vínculos familiares, uso de tecnología,
+                            redes sociales y prevención del riesgo con acompañamiento psicológico y psiquiátrico.
+                        </p>
+                    </div>
+
+                    <!-- Especialidad 4 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-card border-2 border-transparent hover:border-pink-300 transition-all">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-20 h-20 flex items-center justify-center">
+                                <img src="./Logos Helpy/Icono salud reproductiva.png" alt="Salud Reproductiva"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Salud Reproductiva</h4>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Educación sexual basada en evidencia, prevención, conversaciones difíciles, desarrollo
+                            corporal, límites, consentimiento y acompañamiento sano para familias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plataforma Virtual con IA -->
+            <div class="mb-20 bg-gradient-to-r from-helpy to-purple-600 text-white rounded-3xl p-10 shadow-2xl">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold mb-4">🤖 Plataforma Digital con Inteligencia Artificial</h3>
+                    <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                        Más de <strong>500 microcápsulas educativas</strong> creadas por profesionales especializados,
+                        accesibles 24/7 y personalizadas según las necesidades de cada familia.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <h5 class="font-bold text-lg mb-3">📚 Contenido Personalizado</h5>
+                        <p class="text-sm text-blue-100">
+                            Quiz inicial que identifica necesidades y despliega cursos virtuales, microcápsulas
+                            educativas (1-5 min) y contenido basado en evidencia científica.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <h5 class="font-bold text-lg mb-3">👥 Acompañamiento Continuo</h5>
+                        <p class="text-sm text-blue-100">
+                            Acceso a contenidos guiados por profesionales de la salud, herramientas prácticas para
+                            aplicar en el día a día y comunidad Helpy de apoyo.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <h5 class="font-bold text-lg mb-3">🏢 Servicios B2B y B2G</h5>
+                        <p class="text-sm text-blue-100">
+                            Programas para colegios, universidades, cajas de compensación y empresas. Licencias
+                            institucionales y eventos presenciales de alto impacto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fundadores y Equipo -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-gray-900 mb-10 text-center">👥 Nuestro Equipo de Liderazgo</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Fundador 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card text-center">
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">
+                            SV
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Sofía Valencia</h4>
+                        <p class="text-helpy font-semibold mb-3">Co-Fundadora</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Lidera la visión estratégica de Helpy. Su propósito es transformar la manera en que las
+                            familias acceden a información de salud, combinando empatía, educación y rigor científico.
+                        </p>
+                    </div>
+
+                    <!-- Fundador 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card text-center">
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">
+                            EV
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Eduardo Valencia</h4>
+                        <p class="text-helpy font-semibold mb-3">Co-Fundador</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Lidera el equipo de Helpy llevando la visión hacia el próximo nivel, garantizando las
+                            mejores estrategias junto a instituciones públicas y privadas para generar impacto de alto
+                            valor.
+                        </p>
+                    </div>
+
+                    <!-- Directora Científica -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card text-center">
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">
+                            VA
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Dra. Verónica Abad</h4>
+                        <p class="text-helpy font-semibold mb-3">Directora Científica y Médica</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Endocrinóloga pediatra con más de 20 años de experiencia. Garantiza la calidad médica,
+                            científica y ética de todos los contenidos de Helpy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reconocimientos y Logros -->
+            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-3xl p-10 border-2 border-yellow-200">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">🏆 Reconocimientos y Validación</h3>
+                    <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                        Helpy ha sido reconocida por las instituciones más prestigiosas de emprendimiento e innovación
+                        en Colombia y Latinoamérica.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- Premio ON-Going -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="./logos start y ongoing/Logo ON-Going.png" alt="ON-Going University"
+                                class="h-20 mb-4 object-contain">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">🥇 Ganador - ON-Going University</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Premiados como la <strong>mejor startup</strong> (emprendimiento de base tecnológica) de
+                                la <strong>incubadora de negocios de la Universidad EAFIT</strong>, sobre más de 300
+                                empresas participantes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Premio Start Fellowship -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="./logos start y ongoing/Logo Start-Fellowship.png" alt="Start Fellowship"
+                                class="h-20 mb-4 object-contain">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">🌎 Ganador - Start Fellowship</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Seleccionados y reconocidos por <strong>Start Fellowship</strong>, una aceleradora de
+                                negocios en Suiza que apoya a las mejores empresas de impacto social de Latinoamérica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alianzas Institucionales -->
+                <div class="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-orange-200">
+                    <p class="text-center text-gray-800 font-semibold">
+                        ✅ Alianzas institucionales con colegios, organizaciones de salud y entidades públicas<br>
+                        ✅ Contenido validado por más de 20 años de experiencia médica<br>
+                        ✅ Modelo de negocio escalable con impacto social comprobado
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: EL "ASK" - LA PROPUESTA CONCRETA -->
+    <section class="py-24 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sura-red font-bold tracking-wider text-sm uppercase block mb-3">La Propuesta</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Piloto de Contención de Riesgo en Antioquia
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    No pedimos dinero sin retorno. Proponemos un <strong>piloto medible, escalable y
+                        financieramente responsable</strong>.
+                </p>
+            </div>
+
+            <!-- Proposal Card -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-100">
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-sura-blue to-sura-red text-white p-8 text-center">
+                    <h3 class="font-heading text-3xl font-bold mb-2">Piloto Estratégico: 6 Meses</h3>
+                    <p class="text-blue-100 text-lg">Implementación controlada con métricas definidas</p>
+                </div>
+
+                <!-- Content -->
+                <div class="p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+                        <!-- La Acción -->
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                                <div class="w-8 h-8 bg-helpy text-white rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                La Acción
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Implementación de Helpy en población controlada de <strong>1,000 niños
+                                            asegurados</strong> en Antioquia</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Cobertura en <strong>3 colegios piloto</strong> con alianzas
+                                        institucionales</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Acceso 24/7 a plataforma de prevención, triaje y educación
+                                        personalizada</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Duración: <strong>6 meses</strong> con checkpoints mensuales</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- La Métrica -->
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                                <div class="w-8 h-8 bg-sura-red text-white rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                La Métrica de Éxito
+                            </h4>
+                            <div class="bg-red-50 p-6 rounded-2xl border-2 border-red-100 mb-4">
+                                <p class="text-lg font-bold text-sura-red mb-2">Condición de Escalamiento:</p>
+                                <p class="text-gray-800 leading-relaxed">
+                                    Si demostramos que por cada <strong class="text-sura-red">$1 COP invertido</strong>
+                                    se ahorran <strong class="text-green-600">$3 COP en tratamientos curativos</strong>,
+                                    escalamos el modelo a toda la red de SURA en Antioquia.
+                                </p>
+                            </div>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                <strong>KPIs medibles:</strong> Reducción % en urgencias innecesarias, disminución en
+                                consultas por salud mental reactiva, índice de satisfacción de familias, y costo
+                                promedio por beneficiario vs. grupo de control.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Deliverables -->
+                    <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                        <h4 class="text-lg font-bold text-gray-900 mb-6 text-center">Entregables del Piloto</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-12 h-12 bg-helpy text-white rounded-xl flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-sm">Informe Mensual de Métricas</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-12 h-12 bg-helpy text-white rounded-xl flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-sm">Dashboard en Tiempo Real</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-12 h-12 bg-helpy text-white rounded-xl flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-sm">Análisis de Cohortes</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-12 h-12 bg-helpy text-white rounded-xl flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="font-semibold text-sm">Reporte Final de ROI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento de Lanzamiento - COMPREHENSIVE VERSION -->
+            <div
+                class="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-3xl overflow-hidden shadow-2xl">
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-sura-red to-orange-600 p-8 text-center">
+                    <div
+                        class="inline-block px-5 py-2 bg-white/20 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                        Mayo 2026 - Evento Insignia
+                    </div>
+                    <h3 class="font-heading text-4xl md:text-5xl font-bold mb-4">
+                        Helpy 2.0: "Adolescencia en Modo Vida Real"
+                    </h3>
+                    <p class="text-2xl text-orange-100 italic mb-2">
+                        "¿Y si apagamos el wifi para encender la conversación?"
+                    </p>
+                </div>
+
+                <!-- Content -->
+                <div class="p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                        <div
+                            class="bg-white/10 backdrop-blur-sm px-6 py-5 rounded-2xl border border-white/20 text-center">
+                            <div class="text-4xl font-black mb-2">+600</div>
+                            <p class="text-sm text-gray-300">Asistentes Presenciales</p>
+                        </div>
+                        <div
+                            class="bg-white/10 backdrop-blur-sm px-6 py-5 rounded-2xl border border-white/20 text-center">
+                            <div class="text-4xl font-black mb-2">+1M</div>
+                            <p class="text-sm text-gray-300">Visualizaciones Digitales</p>
+                        </div>
+                        <div
+                            class="bg-white/10 backdrop-blur-sm px-6 py-5 rounded-2xl border border-white/20 text-center">
+                            <div class="text-4xl font-black mb-2">8+</div>
+                            <p class="text-sm text-gray-300">Instituciones Aliadas</p>
+                        </div>
+                    </div>
+
+                    <!-- Temáticas del Evento -->
+                    <div class="bg-white/5 rounded-2xl p-8 mb-10 border border-white/10">
+                        <h4 class="text-2xl font-bold mb-6 text-center">🎯 Temáticas del Evento</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                                <h5 class="font-bold text-lg mb-3 text-sura-red flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    Riesgos Digitales
+                                </h5>
+                                <p class="text-sm text-gray-300">Exposición a contenidos sexuales, bullying digital,
+                                    grooming y ciberacoso. Herramientas prácticas para padres.</p>
+                            </div>
+                            <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                                <h5 class="font-bold text-lg mb-3 text-purple-400 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                        </path>
+                                    </svg>
+                                    Salud Mental Temprana
+                                </h5>
+                                <p class="text-sm text-gray-300">Irritabilidad, ansiedad y trastornos del sueño.
+                                    Detección temprana de depresión en adolescentes.</p>
+                            </div>
+                            <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                                <h5 class="font-bold text-lg mb-3 text-blue-400 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                    Crecimiento y Metabolismo
+                                </h5>
+                                <p class="text-sm text-gray-300">Impacto del sedentarismo en el desarrollo físico.
+                                    Pubertad, cambios hormonales y nutrición.</p>
+                            </div>
+                            <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                                <h5 class="font-bold text-lg mb-3 text-green-400 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                    Prevención de TCA
+                                </h5>
+                                <p class="text-sm text-gray-300">Trastornos de Conducta Alimentaria: señales tempranas,
+                                    educación familiar y acompañamiento profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Speakers Confirmados -->
+                    <div class="bg-white/5 rounded-2xl p-8 mb-10 border border-white/10">
+                        <h4 class="text-2xl font-bold mb-6 text-center">🎤 Speakers de Alto Nivel</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl font-bold">
+                                    RA
+                                </div>
+                                <p class="font-bold">Dr. Rommel Andrade</p>
+                                <p class="text-xs text-gray-400">Psiquiatra Infantil</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl font-bold">
+                                    VA
+                                </div>
+                                <p class="font-bold">Dra. Verónica Abad</p>
+                                <p class="text-xs text-gray-400">Endocrinóloga Pediátrica</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl font-bold">
+                                    JR
+                                </div>
+                                <p class="font-bold">Juliana Ramírez</p>
+                                <p class="text-xs text-gray-400">Psicóloga Clínica</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl font-bold">
+                                    CL
+                                </div>
+                                <p class="font-bold">Carlos López</p>
+                                <p class="text-xs text-gray-400">Experto en Riesgos Digitales</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opciones de Vinculación -->
+                    <div class="bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-8 border-2 border-white/20">
+                        <h4 class="text-3xl font-bold mb-8 text-center">💎 Opciones de Vinculación Estratégica para SURA
+                        </h4>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Opción ORO -->
+                            <div
+                                class="bg-gradient-to-br from-yellow-50 to-orange-50 text-gray-900 rounded-2xl p-8 border-2 border-yellow-300">
+                                <div class="text-center mb-6">
+                                    <div
+                                        class="inline-block px-4 py-2 bg-yellow-400 text-yellow-900 rounded-full font-bold text-sm mb-4">
+                                        PATROCINADOR ORO
+                                    </div>
+                                    <div class="text-5xl font-black mb-2">$25M</div>
+                                    <p class="text-sm text-gray-600">COP</p>
+                                </div>
+                                <h5 class="font-bold text-lg mb-4 text-center border-b-2 border-yellow-300 pb-2">
+                                    Beneficios Incluidos</h5>
+                                <ul class="space-y-3 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Stand Estándar</strong> o activación de marca en zona de
+                                            experiencia</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Logo en material oficial:</strong> folletos, banners, redes
+                                            sociales y página web</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Mención verbal</strong> en la inauguración y clausura del
+                                            evento</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Kit Digital</strong> para campaña interna de SURA</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>200 Entradas</strong> de cortesía para
+                                            colaboradores/asegurados</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Opción DIAMANTE -->
+                            <div
+                                class="bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 text-white rounded-2xl p-8 border-2 border-pink-400 relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-pink-500 rounded-full filter blur-3xl opacity-30">
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl opacity-30">
+                                </div>
+
+                                <div class="text-center mb-6 relative z-10">
+                                    <div
+                                        class="inline-block px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full font-bold text-sm mb-4 shadow-lg">
+                                        PATROCINADOR DIAMANTE - CO-CREADOR
+                                    </div>
+                                    <div class="text-5xl font-black mb-2">$50M</div>
+                                    <p class="text-sm text-pink-200">COP - Inversión Estratégica</p>
+                                </div>
+                                <h5
+                                    class="font-bold text-lg mb-4 text-center border-b-2 border-pink-400 pb-2 relative z-10">
+                                    Beneficios Exclusivos Premium</h5>
+                                <ul class="space-y-3 text-sm relative z-10">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Planeación conjunta del evento:</strong> voz y voto en agenda,
+                                            speakers y activaciones</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Stand Premium</strong> en zona de máxima afluencia con diseño
+                                            personalizado</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Logo SURA en pantalla principal</strong> durante todo el evento
+                                            + todo material impreso y digital</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Espacio para presentación institucional</strong> (10 min en
+                                            agenda principal para SURA)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 400 Entradas</strong> de cortesía para
+                                            colaboradores/asegurados</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Reporte detallado post-evento:</strong> métricas de impacto,
+                                            alcance digital, engagement y NPS</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-pink-400 shrink-0 mt-0.5" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>💎 Acceso prioritario</strong> a base de datos de asistentes para
+                                            seguimiento comercial</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Value Proposition for SURA -->
+                        <div class="mt-8 bg-white/10 rounded-xl p-6 border border-white/20">
+                            <h5 class="font-bold text-center mb-4 text-yellow-300">🎯 Por qué SURA debería ser
+                                Patrocinador Diamante</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                                <div class="text-center">
+                                    <p class="font-semibold mb-1">Posicionamiento de Marca</p>
+                                    <p class="text-xs text-gray-300">SURA como líder en prevención pediátrica ante +600
+                                        familias de alto valor y decisores de salud</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="font-semibold mb-1">Formalización de Alianza</p>
+                                    <p class="text-xs text-gray-300">Lanzamiento público del Piloto de Contención de
+                                        Riesgo con visibilidad regional e internacional</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="font-semibold mb-1">Acceso a Insights</p>
+                                    <p class="text-xs text-gray-300">Datos sobre necesidades reales de familias
+                                        aseguradas para diseño de productos preventivos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CALL TO ACTION -->
+    <section class="py-24 px-6 text-center bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-heading text-4xl md:text-6xl font-black text-gray-900 mb-10 leading-tight">
+                Esta gente entiende mi negocio mejor que mis propios proveedores.
+            </h2>
+            <p class="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Helpy no pide un cheque. <strong>Proponemos una inversión estratégica</strong> con retorno medible y
+                escalable. El piloto empieza en 60 días. La pregunta no es "si", sino "cuándo".
+            </p>
+
+            <div
+                class="bg-gradient-to-r from-sura-blue to-helpy text-white rounded-3xl p-10 inline-block shadow-glow mb-10">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold">Próximos Pasos</h3>
+                    <div class="flex flex-col md:flex-row gap-6 items-center justify-center text-left">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 bg-white text-sura-blue rounded-full flex items-center justify-center shrink-0 font-bold">
+                                1
+                            </div>
+                            <div>
+                                <p class="font-bold">Reunión Estratégica</p>
+                                <p class="text-sm text-blue-100">Presentación ejecutiva a Presidencia/Vicepresidencia
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 bg-white text-sura-blue rounded-full flex items-center justify-center shrink-0 font-bold">
+                                2
+                            </div>
+                            <div>
+                                <p class="font-bold">Definición de Piloto</p>
+                                <p class="text-sm text-blue-100">Población objetivo, KPIs y timeline</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 bg-white text-sura-blue rounded-full flex items-center justify-center shrink-0 font-bold">
+                                3
+                            </div>
+                            <div>
+                                <p class="font-bold">Lanzamiento Mayo 2026</p>
+                                <p class="text-sm text-blue-100">Formalización en evento Helpy 2.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <button
+                    class="group relative inline-flex items-center justify-center px-12 py-6 text-2xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-sura-red to-sura-blue rounded-full hover:shadow-glow hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-sura-red/30">
+                    Agendar Reunión Ejecutiva
+                    <svg class="w-7 h-7 ml-3 -mr-1 transition-transform group-hover:translate-x-1" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mt-12 text-gray-600">
+                <p class="font-semibold text-lg mb-2">Contacto Directo</p>
+                <p class="mb-1">Sofía Valencia & Eduardo Valencia - Co-Fundadores Helpy</p>
+                <p class="text-helpy font-bold text-xl">+57 323 286 5148</p>
+                <p class="text-sm text-gray-500 mt-2">eduardo@helpy.com | sofia@helpy.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800 text-center">
+        <div class="flex justify-center items-center gap-8 opacity-60 mb-6">
+            <img src="./logo_helpy.png" alt="Helpy" class="h-10 grayscale">
+            <span class="text-2xl text-white">×</span>
+            <img src="./logo_sura.png" alt="SURA" class="h-10 grayscale">
+        </div>
+        <p class="text-gray-500 text-sm mb-2">Alianza Estratégica para la Prevención Pediátrica</p>
+        <p class="text-gray-600 text-xs">© 2026 Helpy. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
